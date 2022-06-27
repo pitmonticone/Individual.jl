@@ -106,7 +106,7 @@ end
 nothing #hide
 ````
 
-The initial states are the same as the other tutorials, 1000 individuals, 8 of whom are intially infected.
+The initial states are the same as the other tutorials, 1000 individuals, 8 of whom are initially infected.
 
 ````@example sir-age
 initial_states = fill("S", N)

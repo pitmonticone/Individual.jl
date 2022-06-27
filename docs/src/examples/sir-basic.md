@@ -35,14 +35,14 @@ update synchronously.
 
 There are also labels for states to make it easier to write self-documenting models.
 
-The basic schema could be extended with further `Attr`s if needing to model individual level heterogeneity, like immmune respose, etc.
+The basic schema could be extended with further `Attr`s if needing to model individual level heterogeneity, like immune response, etc.
 
 ## Parameters
 
 To start, we should define some parameters. The epidemic will be simulated in a population of 1000, where 8 persons are initially infectious, whose indices are randomly sampled.
 The effective contact rate β will be a function of the deterministic R0 and recovery rate γ. We also specify Δt, which is the size of the time step.
 Because individual’s time steps are all of unit length, we scale transition probabilities by Δt to create models with different sized steps, interpreting the discrete time model as a discretization of a continuous time model.
-If the maximum time is tmax then the overall number of time steps is tmax/Δt.
+If the maximum time is `tmax` then the overall number of time steps is `tmax/Δt`.
 
 ````@example sir-basic
 N = 1000

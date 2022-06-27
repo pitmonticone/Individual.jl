@@ -94,7 +94,7 @@ end
 
 β = R0 * γ / max(eigvals(C)...);
 
-# The initial states are the same as the other tutorials, 1000 individuals, 8 of whom are intially infected.
+# The initial states are the same as the other tutorials, 1000 individuals, 8 of whom are initially infected.
 
 initial_states = fill("S", N)
 initial_states[rand(1:N, I0)] .= "I"
